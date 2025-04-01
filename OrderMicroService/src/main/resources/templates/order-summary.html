@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Order Summary</h1>
+    <table border="1">
+        <tr><th>Order ID</th><td th:text="${order.orderId}"></td></tr>
+        <tr><th>Stock Symbol</th><td th:text="${order.stockSymbol}"></td></tr>
+        <tr><th>Unit</th><td th:text="${order.unit}"></td></tr>
+        <tr><th>Price Per Share</th><td th:text="${order.pricePerShare}"></td></tr>
+        <tr><th>Total Price</th><td th:text="${order.totalPrice}"></td></tr>
+        <tr><th>Status</th><td th:text="${order.status}"></td></tr>
+        <tr><th>Total Fee</th><td th:text="${order.totalFee}"></td></tr>
+        <tr><th>Final Cost</th><td th:text="${order.finalCost}"></td></tr>
+    </table>
+</body>
+</html>

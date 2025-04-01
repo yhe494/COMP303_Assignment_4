@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Orders</title>
+</head>
+<body>
+    <h2>Your Stock Orders</h2>
+    <table border="1">
+        <tr>
+            <th>Stock Symbol</th>
+            <th>Units</th>
+            <th>Price Per Share</th>
+        </tr>
+        <tr th:each="order : ${orders}">
+            <td th:text="${order.stockSymbol}"></td>
+            <td th:text="${order.unit}"></td>
+            <td th:text="${order.price}"></td>
+        </tr>
+    </table>
+</body>
+</html>
